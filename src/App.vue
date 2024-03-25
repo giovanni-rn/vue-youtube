@@ -1,8 +1,8 @@
 <template>
   <header class="m-8 mt-4 rounded-xl flex justify-center bg-white shadow-sm">
-    <form class="w-full mx-8 flex flex-row justify-between items-center">
-      <RouterLink to="/">
-        <img src="/youtube.png" alt="YouTube logo" class="w-12" />
+    <form class="w-full mx-12 flex flex-row justify-between items-center">
+      <RouterLink to="/" class="w-10">
+        <img src="/youtube.png" alt="YouTube logo" />
       </RouterLink>
       <input
         type="text"
