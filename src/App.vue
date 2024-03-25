@@ -1,26 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header class="m-8 mt-4 rounded-xl flex justify-center bg-white shadow-sm">
+    <form class="w-full mx-8 flex flex-row justify-between items-center">
+      <RouterLink to="/">
+        <img src="/youtube.png" alt="YouTube logo" class="w-12" />
+      </RouterLink>
+      <input
+        type="text"
+        placeholder="Search..."
+        class="my-3 ml-8 px-4 py-3 rounded-xl bg-gray-100 text-sm"
+      />
+      <font-awesome-icon icon="magnifying-glass" class="text-2xl ml-6" />
+    </form>
+  </header>
+  <main>
+    <RouterView />
+  </main>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
